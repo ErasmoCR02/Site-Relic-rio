@@ -18,21 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Menu hamburguer responsivo
-    const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.getElementById('navLinks');
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
 });
-});
-
-
-// Menu responsivo
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.getElementById('navLinks');
-
-if (hamburger && navLinks) {
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-}
