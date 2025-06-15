@@ -1,0 +1,15 @@
+{
+  "name": "Relicário Acústico",
+  "short_name": "Relicário",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#612d17",
+  "theme_color": "#eac98d",
+  "icons": [
+    {
+      "src": "src/images/logo-acustico-relicário - Copia.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--bege);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: var(--bege);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+    color: var(--branco);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--bege);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+body .hero {
+    background: url('../images/foto-2-musica-ao-vivo.jpeg') center 30%/cover no-repeat;
+    min-height: 100vh;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(97, 45, 23, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: var(--bege);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-cta {
+    background: var(--bege);
+    color: var(--marrom-escuro);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-cta:hover {
+    background: #fff2d6;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background: #25d366;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background: #128c7e;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 100;
+    background: #25d366;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.5);
+}
+
+.whatsapp-float .fa-whatsapp {
+    width: 32px;
+    height: 32px;
+    color: #fff;
+}
+/* Sobre Section */
+
+.sobre-lado-a-lado {
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+    background: var(--section-bg);
+    padding: 2rem;
+}
+
+.sobre-img img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    display: block;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    color: var(--bege);
+    margin-bottom: 1rem;
+    text-align: start;
+ }
+
+.sobre-texto p {
+    color: var(--bege);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: justify;
+}
+
+.formatos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.formatos h2 {
+    width: 100%;
+    color: var(--bege);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.formatos ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.formatos ul li {
+    background: var(--bege);
+    color: var(--marrom-escuro);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    font-weight: bold;
+    height: 250px;
+    text-align: justify;
+}
+
+.formatos ul li .icon {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    padding: 2rem 0 1rem 0;
+}
+
+.formatos ul li p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--marrom-escuro);
+    margin-top: 2rem;
+}
+
+.estilos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.estilos h2 {
+    width: 100%;
+    color: var(--bege);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.estilos ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.estilos ul .show-barzinho {
+    background: url(../images/show-barzinho.png) center 80%/cover no-repeat;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    height: 100%;
+    width: 15rem;
+    transition: 0.3s ease-in-out;
+}
+
+.estilos ul .rock-nacional {
+     background: url(../images/show-rock-nacional.png) center 40%/cover no-repeat;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+     height: 100%;
+    width: 15rem;
+    transition: 0.3s ease-in-out;
+}
+
+.estilos ul .anos-80 {
+     background: url(../images/show-especial-anos-80.png) center/cover no-repeat;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    height: 100%;
+    width: 15rem;
+    transition: 0.3s ease-in-out;
+}
+
+.estilos ul .festa-junina {
+    background: url(../images/show-festa-junina.png) center/cover no-repeat;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    height: 20rem;
+    width: 15rem;
+    transition: 0.3s ease-in-out;
+}
+
+.estilos ul .personalizado {
+    background: url(../images/show-personalizado.png) center/cover no-repeat;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    height: 100%;
+    width: 15rem;
+    transition: 0.3s ease-in-out;
+}
+
+.estilos ul .show-barzinho:hover,
+.estilos ul .rock-nacional:hover,
+.estilos ul .anos-80:hover,
+.estilos ul .festa-junina:hover,
+.estilos ul .personalizado:hover {
+    transform: scale(1.6);
+    z-index: 1;
+}
+
+
+
+.estilos ul li {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.estilos ul li h2 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: #000;
+    background: rgba(255,255,255);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90%;
+    margin: 0;
+}
+
+.estilos ul li p {
+    font-size: 0.9rem;
+    width: 100%;
+    max-height: 40%;
+    padding: 5px;
+    border-radius: 8px;
+    color: #000;
+    text-align: justify;
+    background: rgba(255,255,255,0.7);
+}
+
+.videos {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: var(--section-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.videos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.video-card {
+    background: var(--marrom-escuro);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    overflow: hidden;
+    width: 340px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+.video-card iframe {
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 200px;
+}
+
+.contato p {
+    text-align: center;
+    color: var(--bege);
+    margin-bottom: 1rem;
+}
+
+.contato-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contato-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--bege);
+    color: var(--marrom-escuro);
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.contato-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.contato-btn.whatsapp {
+    background: var(--verde-whatsapp);
+    color: #fff;
+}
+.contato-btn.whatsapp:hover {
+    background: var(--verde-whatsapp-hover);
+}
+
+.contato-btn.facebook {
+    background: #4267B2;
+    color: #fff;
+}
+.contato-btn.facebook:hover {
+    background: #29487d;
+}
+
+.contato-btn.instagram {
+    background: #E1306C;
+    color: #fff;
+}
+.contato-btn.instagram:hover {
+    background: #ad1457;
+}
+
+
+
