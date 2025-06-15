@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--marrom-escuro);
+    color: var(--bege);
+    min-height: 100vh;
+}
+
+header {
+    background: var(--marrom-escuro);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+section {
+    max-width: 90vw;
+    margin: 0rem auto;
+    padding: 2rem;
+    background: rgba(97, 45, 23, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+h2 {
+    text-align: center;
+    color: var(--bege);
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: disc inside;
+    margin-left: 1rem;
+}

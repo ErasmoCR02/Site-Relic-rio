@@ -1,0 +1,22 @@
+{
+  "name": "pagina-de-vendas",
+  "version": "1.0.0",
+  "description": "Projeto de página de vendas com HTML, CSS e JavaScript.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet.'"
+  },
+  "keywords": [
+    "vendas",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

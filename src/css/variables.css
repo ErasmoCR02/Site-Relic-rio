@@ -1,0 +1,10 @@
+:root {
+    --marrom-escuro: #612d17;
+    --bege: #eac98d;
+    --branco: #fff;
+    --verde-whatsapp: #25d366;
+    --verde-whatsapp-hover: #128c7e;
+    --hero-overlay: rgba(97, 45, 23, 0.7);
+    --section-bg: rgba(97, 45, 23, 0.85);
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
