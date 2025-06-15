@@ -39,6 +39,19 @@
     display: none; /* Esconde o menu de navegação por padrão */
   }
 
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--marrom-escuro);
+    width: 100%;
+    padding: 1rem 0;
+    gap: 1rem;
+    text-align: center;
+  }
+
   .hamburger {
     display: flex; /* Exibe o ícone do menu */
   }
