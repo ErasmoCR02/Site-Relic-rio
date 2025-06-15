@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Obrigado por seu interesse! Em breve, você receberá mais informações.');
     });
   }
-
   const imageGallery = document.querySelectorAll('.gallery-image');
   imageGallery.forEach(image => {
     image.addEventListener('click', function () {
