@@ -1,13 +1,13 @@
-# Projeto Página de Vendas
+# Projeto Relicário Acústico
 
 Este projeto é uma página de vendas simples, desenvolvida utilizando HTML, CSS e JavaScript. Abaixo estão as instruções para configurar e executar o projeto.
 
 ## Estrutura do Projeto
 
 ```
-pagina-de-vendas
+Site-Relic-rio
+├── index.html           # Página principal do projeto
 ├── src
-│   ├── index.html       # Página principal do projeto
 │   ├── css
 │   │   └── style.css    # Estilos CSS para a página
 │   ├── js
@@ -21,7 +21,7 @@ pagina-de-vendas
 1. **Clone o repositório:**
    ```
    git clone <URL do repositório>
-   cd pagina-de-vendas
+   cd Site-Relic-rio
    ```
 
 2. **Instale as dependências:**
@@ -29,7 +29,7 @@ pagina-de-vendas
    npm install
    ```
 
-3. **Abra o arquivo `src/index.html` em um navegador:**
+3. **Abra o arquivo `index.html` em um navegador:**
    Você pode abrir o arquivo diretamente no navegador ou usar um servidor local para visualizar a página.
 
 ## Funcionalidades
