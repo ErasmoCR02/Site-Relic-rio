@@ -80,7 +80,8 @@
 /* 📱 Ajustes específicos para telas muito pequenas (até 440px) */
 @media (max-width: 440px) {
   body {
-    width: 120%;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .formatos ul {
