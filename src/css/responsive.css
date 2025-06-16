@@ -61,6 +61,10 @@
     justify-content: center;
     gap: 1rem;
   }
+
+  .estilos ul .personalizado {
+    background: url(../images/show-personalizado.png) 15% center /cover no-repeat;
+}
   
   .videos {
     display: flex;
@@ -108,5 +112,21 @@
 @media (max-width: 380px) {
   .hero-content .btn-cta{
     font-size: 0.7rem;
+  }
+
+   .estilos ul .show-barzinho {
+    background: url(../images/show-barzinho.png) 20% center /cover no-repeat;
+  }
+
+  .estilos ul .anos-80 {
+    background: url(../images/show-especial-anos-80.png) 20% center /cover no-repeat;
+  }
+
+  .videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 2400px;
   }
 }
